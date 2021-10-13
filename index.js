@@ -64,9 +64,9 @@ inquirer.prompt([
     const install = response.install
     const usage = response.usage
     const credits = response.credits
-    let license
     const github = response.github
     const email = response.email
+    let license
 
     if(response.license === 'MIT'){
         license = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]Copyright ${year} ${name}
@@ -102,6 +102,10 @@ inquirer.prompt([
     const readMe = `# project-name
     ${title}
 
+
+## Table of Contents
+[License](#License)
+
 ## Description
 ${description}
 
@@ -124,7 +128,7 @@ ${license}
 
 
 
-    fs.writeFile('README-sample.md', readMe, err =>{
+    fs.writeFile('README.md', readMe, err =>{
         err ? console.log('something went wrong') : console.log('it worked')
     })
 })
