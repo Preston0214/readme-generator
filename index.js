@@ -102,28 +102,24 @@ inquirer.prompt([
     const readMe = `# project-name
     ${title}
 
-
-## Table of Contents
-[License](#License)
-
 ## Description
-${description}
+    ${description}
 
 ## Installation
-${install}
+    ${install}
 
 ## Usage
-${usage}
+    ${usage}
 
  ## Contributors
-${credits}
+    ${credits}
 
 ## Questions
-${github}
-${email}
+    ${github}
+    ${email}
 
 ## License
-${license}
+    ${license}
     `
 
 
